@@ -248,8 +248,8 @@ def main():
         grafF(col2)
         col2.write("""
             En la gráfica se observa que el consumo de agua por litro no afecta el hecho de pertenecer a una mayor o menor categoría de obesidad. 
-            El consumo de agua siempre se mantiene en promedio de uno y dos que es lo normal que debe consumir una persona, es decir, que el consumo 
-            de agua no afecta al aumento o disminución de masa""")
+            El consumo de agua siempre se mantiene en promedio de uno y dos que es lo consumido normalmente por una persona, es decir, que el consumo 
+            de agua no afecta en gran medida para el aumento o pérdida de masa""")
 
         col3.subheader('Relación Obesidad - Actividad Física')
         grafFi(col3)
@@ -270,16 +270,16 @@ def main():
         cl2.title('')
         c1, c2, c3, c4, c5, c6 = st.columns([1, 2, 2, 2, 2, 1])
         Edad = c3.slider(
-            "Frecuencia en el consumo de verduras", min_value=14, max_value=61, value=22)
+            "Edad: ", min_value=14, max_value=61, value=22)
         F_consumo_verduras = c2.slider(
-            "Frecuencia en el consumo de verduras", min_value=1, max_value=3)
+            "Frecuencia en el consumo de verduras: ", min_value=1, max_value=3)
         N_comidas = c2.slider(
-            "Número de comidas al día", min_value=1, max_value=4)
+            "Número de comidas al día: ", min_value=1, max_value=4)
         Consumo_agua = c3.slider(
-            "Consumo de agua al día", min_value=1.0, max_value=3.0)
+            "Consumo de agua al día: ", min_value=1.0, max_value=3.0)
 
         F_actvidad_fisica = c2.slider(
-            "Frecuencia de actividad fisica al día", min_value=0.0, max_value=3.0)
+            "Frecuencia de actividad fisica al día: ", min_value=0.0, max_value=3.0)
 
         c3.title('')
 
